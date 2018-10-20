@@ -6,26 +6,38 @@
   </head>
   <body>
     <script>
+    var chimney = prompt('Do you want a chimney in your house?');
     var windows = prompt('Do you want windows in your house?');
     var door = prompt('Do you want a door in your house?');
-    var chimney = prompt('Do you want a chimney in your house?');
-    if(windows === 'yes'){
-      console.log('\t'+'  ~~~'+'\n'+'       |'+'|'+'\n'+'    /'+'\\'+' |'+'|'+'\n'+'   /'+'  \\'+'|'+'|'+'\n'+'  /'+'    |'+'|'+'\n'+' /'+'      \\'+'\n'+'/'+'        \\'+'\n'+'|'+'        |'+'\n'+'|'+'  o'+'  o'+'  |'+'\n'+'|'+'    _   |'+'\n'+'|'+'    |'+'|'+'  |');
-    } else if(windows === 'no'){
-      console.log('\t'+'  ~~~'+'\n'+'       |'+'|'+'\n'+'    /'+'\\'+' |'+'|'+'\n'+'   /'+'  \\'+'|'+'|'+'\n'+'  /'+'    |'+'|'+'\n'+' /'+'      \\'+'\n'+'/'+'        \\'+'\n'+'|'+'        |'+'\n'+'|'+'        |'+'\n'+'|'+'    _   |'+'\n'+'|'+'    |'+'|'+'  |')
 
-    }
-    else if(door === 'yes'){
-      console.log('\t'+'  ~~~'+'\n'+'       |'+'|'+'\n'+'    /'+'\\'+' |'+'|'+'\n'+'   /'+'  \\'+'|'+'|'+'\n'+'  /'+'    |'+'|'+'\n'+' /'+'      \\'+'\n'+'/'+'        \\'+'\n'+'|'+'        |'+'\n'+'|'+'  o'+'  o'+'  |'+'\n'+'|'+'    _   |'+'\n'+'|'+'    |'+'|'+'  |');
-    }
-    // house with no door and no windows
-      else if(door === 'no'){
-        console.log('\t'+'  ~~~'+'\n'+'       |'+'|'+'\n'+'    /'+'\\'+' |'+'|'+'\n'+'   /'+'  \\'+'|'+'|'+'\n'+'  /'+'    |'+'|'+'\n'+' /'+'      \\'+'\n'+'/'+'        \\'+'\n'+'|'+'        |'+'\n'+'|'+'        |'+'\n'+'|'+'        |'+'\n'+'|'+'        |');
-
-    }
-    else if(chimney === 'yes'){
-      console.log('\t'+'  ~~~'+'\n'+'       |'+'|'+'\n'+'    /'+'\\'+' |'+'|'+'\n'+'   /'+'  \\'+'|'+'|'+'\n'+'  /'+'    |'+'|'+'\n'+' /'+'      \\'+'\n'+'/'+'        \\'+'\n'+'|'+'        |'+'\n'+'|'+'  o'+'  o'+'  |'+'\n'+'|'+'    _   |'+'\n'+'|'+'    |'+'|'+'  |');
-
+    if (chimney === 'yes'){
+      console.log('             ~~~');
+      console.log('       ||');
+      console.log('    /\\ ||');
+      console.log('   /  \\||');
+      console.log('  /    ||');
+      console.log(' /      \\');
+      console.log('/        \\');
+    } if (chimney === 'no') {
+      console.log('    /\\ ');
+      console.log('   /  \\');
+      console.log('  /    \\');
+      console.log(' /      \\');
+      console.log('/        \\');
+    } if (windows === 'yes'){
+      console.log('|         |');
+      console.log('|  o    o |');
+      console.log('|         |');
+    } if (windows === 'no'){
+      console.log('|         |');
+      console.log('|         |');
+      console.log('|         |');
+    } if (door === 'yes'){
+      console.log('|    _    |');
+      console.log('|   | |   |');
+    } if (door === 'no'){
+      console.log('|         |');
+      console.log('|         |');
     }
     </script>
   </body>
